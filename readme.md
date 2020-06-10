@@ -10,7 +10,7 @@ _This program will allow a user to type a word or phrase and have it be returned
 
 | Behavior | Input | Output |
 | :--- | :----: | ---: |
-| It will not accept number values | The user puts in the number 1 | The program sends a js alert and changess the css background to bright, bright red and the text is yellow with no dark outline
+| The program will ignore number values | The user puts in the number 1 | 1 |
 | The program adds "yay" to sinlge-letter words beginning with a vowel  | The user gives "I"  | "Iyay" |
 | The program adds "yay" to words beginning with a vowel  | "affirm"  | "affirmyay" |
 | When a word starts with more than one consonant, program will move them (consonants) to the end and "ay"  | strong  | "ongstray"  |
