@@ -1,9 +1,12 @@
-h1{
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+h1  {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: whitesmoke;
+  font-weight: lighter;
 }
 label {
   color: whitesmoke;
+  font-weight: lighter;
+  font-family: sans-serif;
 }
 
 body {

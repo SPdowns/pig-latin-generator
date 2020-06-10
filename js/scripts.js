@@ -1,19 +1,24 @@
 //  Business Logic
-function pigLatin(inputString)  {
+function pigLatin(input)  {
   let finalArray = [];
-  let stringArray = inputString.toLowerCase().split("");
+  let inputArray = input.toLowerCase().split(" ");
   const numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   const vowelArray = ["a", "e", "i", "o", "u", "y"];
   
 
     console.log(stringArray);
-    vowelArray.forEach(function(stringArray) {
-  if (vowelArray.includes(stringArray[0]))  {
-    finalArray.push(stringArray + "yay");
+
+  inputArray.forEach(function(vowelCheck) {
+    console.log(inputArray, vowelArray);
+  if (inputArray.includes(vowelArray))  {
+    finalArray.push(inputArray + "yay");
   } else {
-    finalArray.push(stringArray);
+    finalArray.push(inputArray);
   }
   });
+  return finalArray;
+  console.log(finalArray)
+  
 };
 
 
@@ -29,15 +34,15 @@ function pigLatin(inputString)  {
 //   return finalArray.join("");
 // };
 
-// function checkIfVowel(inputString)
+// function vowelCheck(input)
 
 
 //  User Interface Logic
 $(document).ready(function() {
   $("form#pig").submit(function(event) {
   event.preventDefault();
-  let inputString = $("input#word").val();
-  let newString = pigLatin(inputString);
-  $("#output").text(newString);
+  let input = $("input#word").val();
+  let output = pigLatin(input);
+  $("#output").text(output);
   })
 })
