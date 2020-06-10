@@ -12,8 +12,7 @@ function checkIfNumber(inputString)  {
     finalArray.push(stringArray[index]);
     for (let j=0; j<=numArray.length-1; j+=1)  {
       if (numArray[j] === stringArray[index])  {
-        finalArray.pop("");
-        finalArray.push(stringArray[index]);
+         finalArray.push();
       };
     };
   };
