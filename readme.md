@@ -1,12 +1,23 @@
-# _Project Title_
+# _Pig Latin Generator_
 
-#### _Description, Date_
+#### _This is an application that translates english to Pig Latin, 6.10.2020_
 
-#### By _**Taylor Phillips**_
+#### By _**Taylor Phillips, Sean Downs and Nikolas Kososik**_
 
 ## Description
 
-_Detailed description of the application_
+_This program will allow a user to type a word or phrase and have it be returned in a Pig Latin translation It will:_
+
+| Behavior | Input | Output |
+| :--- | :----: | ---: |
+| It has no effect on numbers | The user puts in the number 1 | The program sends a js alert and changess the css background to bright, bright red and the text is yellow with no dark outline
+| The program adds "yay" to sinlge-letter words beginning with a vowel  | The user gives "I"  | "Iyay" |
+| The program adds "yay" to words beginning with a vowel  | "affirm"  | "affirmyay" |
+| When a word starts with more than one consonant, program will move them (consonants) to the end and "ay"  | strong  | "ongstray"  |
+| When a word starts with "qu", program will move "qu" to the end and add "ay"  | "quote" | "otequay" |
+| For words beginning with "y",  program will treat "y" as a consonant  | "yellow"  | "ellowyay"  |
+| Words with "y" not as first letter will treat "y" as a vowel  | "always"  | "alwaysyay" |
+
 
 ## Setup/Installation Requirements
 
@@ -40,4 +51,4 @@ _VSCode_
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Copyright (c) 2020 **_Taylor Phillips_**
+Copyright (c) 2020 **_Taylor Phillips, Nikolas Kososik and Sean Downs_**

@@ -1,0 +1,17 @@
+h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: whitesmoke;
+}
+label {
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("../img/starrySky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+#output {
+  color: gold;
+}
