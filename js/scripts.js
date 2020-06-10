@@ -1,5 +1,5 @@
 //  Business Logic
-function checkIfNumber(inputString)  {
+function pigLatin(inputString)  {
   let finalArray = [];
   let stringArray = inputString.toLowerCase().split("");
   const numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -7,12 +7,13 @@ function checkIfNumber(inputString)  {
   
 
     console.log(stringArray);
-    stringArray.forEach(vowelArray);
-  if (stringArray.includes(vowelArray[0]))  {
+    vowelArray.forEach(function(stringArray) {
+  if (vowelArray.includes(stringArray[0]))  {
     finalArray.push(stringArray + "yay");
   } else {
     finalArray.push(stringArray);
   }
+  });
 };
 
 
@@ -35,8 +36,8 @@ function checkIfNumber(inputString)  {
 $(document).ready(function() {
   $("form#pig").submit(function(event) {
   event.preventDefault();
-  let inputString =  $("input#word").val();
-  let newString = checkIfNumber(inputString);
+  let inputString = $("input#word").val();
+  let newString = pigLatin(inputString);
   $("#output").text(newString);
   })
 })
