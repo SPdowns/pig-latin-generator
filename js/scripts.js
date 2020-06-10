@@ -1,19 +1,19 @@
 //  Business Logic
 function checkIfNumber(inputString)  {
   let finalArray = [];
-  let stringArray = inputString.split("");
+  let stringArray = inputString.toLowerCase().split("");
   const numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
-  const vowelArray = ["a", "e", "i", "o", "u", "y", "A", "E", "I", "O", "U", "Y"];
+  const vowelArray = ["a", "e", "i", "o", "u", "y"];
   
 
     console.log(stringArray);
-    stringArray.forEach(checkIfVowel(inputString))  {
-  if (vowelArray.includes(inputString[0]))  {
-    finalArray.push(inputString + "yay");
+    stringArray.forEach(vowelArray);
+  if (stringArray.includes(vowelArray[0]))  {
+    finalArray.push(stringArray + "yay");
   } else {
     finalArray.push(stringArray);
   }
-// })
+};
 
 
 //   for (let index=0; index<=stringArray.length-1; index+=1)  {

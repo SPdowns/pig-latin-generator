@@ -11,7 +11,7 @@ _This program will allow a user to type a word or phrase and have it be returned
 | Behavior | Input | Output |
 | :--- | :----: | ---: |
 | The program will ignore number values | The user puts in the number 1 | 1 |
-| The program adds "yay" to sinlge-letter words beginning with a vowel  | The user gives "I"  | "Iyay" |
+| The program adds "yay" to single-letter words beginning with a vowel  | The user gives "I"  | "Iyay" |
 | The program adds "yay" to words beginning with a vowel  | "affirm"  | "affirmyay" |
 | When a word starts with more than one consonant, program will move them (consonants) to the end and "ay"  | strong  | "ongstray"  |
 | When a word starts with "qu", program will move "qu" to the end and add "ay"  | "quote" | "otequay" |
