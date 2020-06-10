@@ -5,7 +5,7 @@ function pigLatin(input)  {
   const numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   const vowelArray = ["a", "e", "i", "o", "u", "y"];
   
-  inputArray.forEach(function(vowelCheck) {
+  vowelArray.forEach(inputArray) {
     console.log(inputArray, vowelArray);
   if (vowelArray.includes(inputArray[0]))  {
     finalArray.push(inputArray + "yay");
@@ -14,11 +14,10 @@ function pigLatin(input)  {
   } else {
     finalArray.push(inputArray);
   }
-  });
-  return finalArray.join();
   
+  return finalArray;
 };
-// const finalArray = (inputArray.map(pigLatin(input) {
+  // const finalArray = (inputArray.map(pigLatin(input) {
 //    return input * 2;
 // })
 //   for (let index=0; index<=stringArray.length-1; index+=1)  {
@@ -41,7 +40,7 @@ $(document).ready(function() {
   $("form#pig").submit(function(event) {
   event.preventDefault();
   let input = $("input#word").val();
-  let output = pigLatin(vowelCheck)
+  let output = pigLatin(input)
   $("#output").text(output);
   })
 })

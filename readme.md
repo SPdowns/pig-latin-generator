@@ -34,7 +34,7 @@ _This program will allow a user to type a word or phrase and have it be returned
 
 ## Known Bugs
 
-_There are no known bugs_
+_As of now it is broken, conditions are not meeting..._
 
 ## Support and contact details
 
