@@ -5,12 +5,9 @@ function pigLatin(input)  {
   const numArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   const vowelArray = ["a", "e", "i", "o", "u", "y"];
   
-
-    console.log(stringArray);
-
-  inputArray.forEach(function(vowelCheck) {
+  inputArray.forEach(function(firstVowelCheck) {
     console.log(inputArray, vowelArray);
-  if (inputArray.includes(vowelArray))  {
+  if (vowelArray.includes(inputArray[0]))  {
     finalArray.push(inputArray + "yay");
   } else {
     finalArray.push(inputArray);
@@ -34,7 +31,6 @@ function pigLatin(input)  {
 //   return finalArray.join("");
 // };
 
-// function vowelCheck(input)
 
 
 //  User Interface Logic
